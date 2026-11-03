@@ -39,22 +39,6 @@ appointment reminder.
 | **Contributing factors** | No defined interaction between cancellation and reminder flows; tests cover booking only (#7); no automated gate on PRs (#8); no monitoring of messaging behavior (#12); similar stale-data behavior seen in #10 |
 | **Underlying causes** | DoD and issue template do not require checking side effects on related features; the team has no routine for monitoring what the system sends |
 
-## Information still needed
-- How often this happens and how many patients were affected
-- Whether it correlates with cancellations made shortly before the send time
-- Whether SMS and email behave the same way
-- Whether it began with a specific release
-
-## Corrective and preventive actions
-
-| # | Type | Action | Issue | Owner | Due |
-|---|---|---|---|---|---|
-| 1 | Corrective | Check appointment status at send time; remove queued reminders when an appointment is cancelled | #14 | [name] | [date] |
-| 2 | Preventive | Add "side effects on related features checked" to the Definition of Done and issue template | #15 | [name] | [date] |
-| 3 | Preventive | Add a regression test: cancel an appointment, confirm no reminder is sent | #7 (scope extended) | [Negin] | [date] |
-| 4 | Preventive | Log/alert when a reminder is sent for a non-active appointment | #12 (scope extended) | [Felix] | [date] |
-| 5 | Preventive | Add cancellation/reminder behavior to acceptance criteria of upcoming work | #1, #2 (updated) | [Julian / Leana] | [date] |
-
 ## Lessons
 The incident came from gaps in how requirements, tests and monitoring were
 set up, not from an individual's action. The actions above target those
