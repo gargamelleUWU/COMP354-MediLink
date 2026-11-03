@@ -27,3 +27,6 @@ If an item doesn't apply, write "N/A" with a short reason in the issue.
 **Technical (CI, logging, dependencies)**
 - [ ] Setup or usage instructions documented
 - [ ] Team informed of any change to how they work (e.g., new merge rules)
+
+**Update**
+- [ ] Side effects on related features (reminders, notifications, search) considered and tested
