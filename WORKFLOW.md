@@ -1,5 +1,5 @@
 ## WIP limits
-- In Progress: 3 | Code Review: 2 | Verification: 2
+- In Progress: 4 | Code Review: 2 | Verification: 2
 ### Why these numbers
 Our team has four members, and each one owns three work items, including
 exactly one P1. We set In Progress to 4 so every member can work on their
